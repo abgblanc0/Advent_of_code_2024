@@ -1,6 +1,7 @@
 use std::fs;
 
 type Label = [[i128; 3]; 2];
+
 const MULT: i128 = 10000000000000;
 
 pub fn solution() {
@@ -12,7 +13,7 @@ pub fn solution() {
     machines.push(mac.lines().map(|line| { 
       let nums: Vec<i128> = line.split(|c: char| !c.is_numeric()).filter(|s| !s.is_empty()).map(|s| s.parse().unwrap()).collect();
 
-      [ [nums[0], nums[2], nums[4] * MULT], [nums[1], nums[3], nums[5] * MULT] ]
+      [ [nums[0], nums[2], nums[4] + MULT], [nums[1], nums[3], nums[5] + MULT] ]
     }).collect());
   });
 
