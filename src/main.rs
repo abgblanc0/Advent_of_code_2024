@@ -7,4 +7,5 @@ fn main() {
     //days::day09::solution(); days::day10::solution();
     //days::day11::solution(); days::day12::solution();
     //days::day13::solution(); days::day14::solution(); <-- HARDCODED DAY 14. WARNING, a lot of pngs will be created (10403) 🤡
+    days::day15::solution();
 }
